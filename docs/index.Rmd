@@ -15,5 +15,7 @@ data <- fread("../data/journal list.csv")
 ```
 
 ```{r}
-reactable(data, filterable = T, searchable = T, highlight = T, striped = T)
+reactable(data, filterable = T, searchable = T, highlight = T, striped = T,
+          showPageSizeOptions = T,
+          pageSizeOptions = c(5, 10, 20, 100, 999))
 ```
